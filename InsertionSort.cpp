@@ -38,7 +38,7 @@ void insertionSort()
 int tempt; // Membuat variable data temporer atau penyimpanan sementara
 int j, i; // Membuat variable j sebagai penanda
 
-for (i = 1; i <= n - 1; 1++)
+for (i = 1; i <= n - 1; i++)
 { // Step 1
 
 tempt = arr[i]; // Step 2
@@ -51,7 +51,7 @@ arr[j + 1] = arr[j]; // Step 4a
 j--; // Step 4b
 }
 
-arr[j + 1] = temp; // Step 5
+arr[j + 1] = tempt; // Step 5
 }
 }
 
@@ -76,6 +76,6 @@ int main()
 input();
 insertionSort();
 display();
-system{"Pause"};
+system("Pause");
 return 0;
 }
